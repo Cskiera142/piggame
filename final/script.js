@@ -1,7 +1,7 @@
 'use strict';
 
 // Selecting elements
-const modal = document.querySelector('.modal');
+const modal = document.querySelector('.modal-container');
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 const score0El = document.querySelector('#score--0');
@@ -109,9 +109,9 @@ window.addEventListener('click', e => {
   if (e.target == modal) {
     modal.style.display = 'none';
   }
-  console.log('test');
 });
 
 btnRules.addEventListener('click', () => {
-  modal.style.display = 'block';
+  modal.style.display = 'flex';
 });
+
